@@ -1,0 +1,94 @@
+.section__content-row-1 {
+  background-color: var(--white_a700);
+  box-shadow: var(--shadow-xs);
+  width: 100%;
+  padding: var(--space-2xl);
+  border-radius: var(--radius-xl);
+}
+
+.section__form-2 {
+  margin-bottom: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section__form-title {
+  margin-top: 36px;
+  margin-left: 14px;
+  align-self: flex-start;
+  @media only screen and (max-width: 1050px) {
+    margin-left: 0px;
+  }
+}
+
+.section__form-journal-row {
+  margin-top: 36px;
+  margin-left: 44px;
+  margin-right: 44px;
+  gap: var(--space-6xl);
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  @media only screen and (max-width: 1050px) {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+.section__form-journal-button {
+  color: var(--black_900) !important;
+  padding-left: 21px;
+  padding-right: 27px;
+  font-size: 24px;
+  align-self: center;
+  background-color: var(--gray_200_5e) !important;
+  box-shadow: 0 1px 1px 0 #0000003f !important;
+  height: 42px;
+  min-width: 522px;
+  border-radius: 20px !important;
+  border: 1px solid var(--black_900_26);
+  @media only screen and (max-width: 1050px) {
+    font-size: 22px;
+  }
+
+  @media only screen and (max-width: 550px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.section__form-transaction-title {
+  margin-top: 64px;
+  margin-left: 14px;
+  align-self: flex-start;
+  @media only screen and (max-width: 1050px) {
+    margin-left: 0px;
+  }
+}
+
+.section__form-price-row {
+  margin-top: 20px;
+  margin-left: 44px;
+  margin-right: 44px;
+  gap: 31px;
+  align-self: stretch;
+  display: flex;
+  flex-wrap: wrap;
+  @media only screen and (max-width: 1050px) {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+.section__form-navigation-row {
+  margin-top: 378px;
+  margin-right: 22px;
+  align-self: stretch;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  @media only screen and (max-width: 1050px) {
+    margin-right: 0px;
+  }
+}

@@ -1,0 +1,178 @@
+.main-sign-in-form {
+  background-color: var(--gray_400);
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: var(--space-13xl) 72px var(--space-13xl) 56px;
+  @media only screen and (max-width: 1440px) {
+    padding-right: var(--space-10xl);
+  }
+
+  @media only screen and (max-width: 1050px) {
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media only screen and (max-width: 550px) {
+    padding: var(--space-4xl);
+  }
+}
+
+.sign-in-form__content {
+  gap: var(--space-16xl);
+  display: flex;
+  background-color: var(--white_a700_b2);
+  width: 82%;
+  flex-direction: column;
+  align-items: center;
+  padding: 96px 56px;
+  border-radius: var(--radius-14xl);
+  @media only screen and (max-width: 1440px) {
+    width: 100%;
+    gap: 106px;
+    padding-top: var(--space-10xl);
+    padding-bottom: var(--space-10xl);
+  }
+
+  @media only screen and (max-width: 1050px) {
+    width: 100%;
+    gap: 106px;
+    padding: 20px;
+  }
+
+  @media only screen and (max-width: 550px) {
+    gap: 71px;
+    padding: var(--space-4xl);
+  }
+}
+
+.sign-in-form__title {
+  color: var(--gray_900_e0) !important;
+  font-family: Candal !important;
+  text-align: center;
+  width: 68%;
+  line-height: 62px;
+  @media only screen and (max-width: 1440px) {
+    width: 100%;
+    font-size: 40px;
+  }
+
+  @media only screen and (max-width: 1050px) {
+    width: 100%;
+    font-size: 32px;
+  }
+
+  @media only screen and (max-width: 550px) {
+    font-size: 26px;
+  }
+}
+
+.sign-in-form__fields {
+  margin-bottom: 144px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media only screen and (max-width: 1440px) {
+    width: 100%;
+  }
+
+  @media only screen and (max-width: 1050px) {
+    width: 100%;
+  }
+}
+
+.sign-in-form__email-input {
+  color: var(--black_900_7f) !important;
+  padding-left: 34px;
+  padding-right: 34px;
+  font-size: 24px;
+  font-weight: 700;
+  border-color: var(--black_900_66);
+  border-bottom-width: 1px;
+  background-color: var(--blue_gray_50_4c) !important;
+  box-shadow: 0 4px 4px 0 #0000003f !important;
+  align-self: stretch;
+  height: 58px;
+  border-radius: 28px !important;
+  @media only screen and (max-width: 550px) {
+    padding-left: var(--space-4xl);
+    padding-right: var(--space-4xl);
+  }
+}
+
+.sign-in-form__password-input {
+  color: var(--black_900_7f) !important;
+  margin-top: 62px;
+  padding-left: 34px;
+  padding-right: 34px;
+  font-size: 24px;
+  font-weight: 700;
+  border-color: var(--black_900_66);
+  border-bottom-width: 1px;
+  background-color: var(--blue_gray_50_4c) !important;
+  box-shadow: 0 4px 4px 0 #0000003f !important;
+  align-self: stretch;
+  height: 58px;
+  border-radius: 28px !important;
+  @media only screen and (max-width: 550px) {
+    padding-left: var(--space-4xl);
+    padding-right: var(--space-4xl);
+  }
+}
+
+.sign-in-form__forgot-password {
+  color: var(--black_900_4c) !important;
+  margin-top: 8px;
+  margin-left: 22px;
+  align-self: flex-start;
+  @media only screen and (max-width: 1440px) {
+    font-size: 13px;
+  }
+
+  @media only screen and (max-width: 1050px) {
+    margin-left: 0px;
+  }
+}
+
+.sign-in-form__submit-button {
+  color: var(--white_a700) !important;
+  margin-top: 66px;
+  margin-left: 120px;
+  margin-right: 120px;
+  padding-left: 33px;
+  padding-right: 33px;
+  font-size: 32px;
+  font-weight: 700;
+  background-color: var(--gray_900_01) !important;
+  box-shadow: 0 10px 30px 0 #0000003f !important;
+  align-self: stretch;
+  height: 78px;
+  border-radius: 38px !important;
+  border: 1px solid var(--gray_900_04);
+  @media only screen and (max-width: 1440px) {
+    font-size: 27px;
+  }
+
+  @media only screen and (max-width: 1050px) {
+    font-size: 26px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  @media only screen and (max-width: 550px) {
+    font-size: 24px;
+    padding-left: var(--space-4xl);
+    padding-right: var(--space-4xl);
+  }
+}
+
+.sign-in-form__signup-options {
+  margin-top: 42px;
+  gap: var(--space-xl);
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}

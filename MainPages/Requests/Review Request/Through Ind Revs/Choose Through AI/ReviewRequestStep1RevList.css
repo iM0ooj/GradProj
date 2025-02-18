@@ -1,0 +1,135 @@
+/*=========== TABLE OF CONTENTS ===========
+1. Common CSS
+2. Page CSS
+==========================================*/
+
+/*-------------------------------------
+  1. Common CSS
+--------------------------------------*/
+.progress__line--middle {
+  height: 1px;
+  background-color: var(--gray_400_01);
+  width: 28%;
+}
+
+/*-------------------------------------
+  2. Page CSS
+--------------------------------------*/
+.content__column-1 {
+  margin-bottom: 4px;
+  margin-right: 26px;
+  gap: 152px;
+  display: flex;
+  width: 94%;
+  flex-direction: column;
+  @media only screen and (max-width: 1050px) {
+    width: 100%;
+    gap: 114px;
+    margin-right: 0px;
+  }
+
+  @media only screen and (max-width: 550px) {
+    gap: 76px;
+  }
+}
+
+.content__title {
+  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  @media only screen and (max-width: 1050px) {
+    margin-right: 0px;
+  }
+}
+
+.title__steps {
+  padding-left: var(--space-5xl);
+  padding-right: var(--space-5xl);
+  gap: var(--space-xs);
+  display: flex;
+  align-self: stretch;
+  flex-direction: column;
+}
+
+.steps__list {
+  margin-left: 114px;
+  margin-right: 76px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  @media only screen and (max-width: 1050px) {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+.content__progress {
+  margin-left: 36px;
+  display: flex;
+  @media only screen and (max-width: 1050px) {
+    flex-direction: column;
+    margin-left: 0px;
+  }
+}
+
+.progress__row {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  @media only screen and (max-width: 1050px) {
+    align-self: stretch;
+  }
+
+  @media only screen and (max-width: 550px) {
+    flex-direction: column;
+  }
+}
+
+.progress__line--start {
+  height: 1px;
+  background-color: var(--teal_800);
+  width: 14%;
+}
+
+.progress__row--end {
+  width: 24%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  @media only screen and (max-width: 1050px) {
+    width: 100%;
+  }
+}
+
+.progress__line--final {
+  height: 1px;
+  background-color: var(--gray_400_01);
+  width: 44%;
+}
+
+.title__description {
+  margin-top: 32px;
+}
+
+.actions__submit {
+  color: var(--white_a700) !important;
+  padding-left: 26px;
+  padding-right: 26px;
+  font-size: 24px;
+  font-weight: 700;
+  background-color: var(--teal_800) !important;
+  box-shadow: 5px 4px 4px 0 #0000003f !important;
+  height: 54px;
+  min-width: 250px;
+  border-radius: 20px !important;
+  @media only screen and (max-width: 1050px) {
+    font-size: 22px;
+  }
+
+  @media only screen and (max-width: 550px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

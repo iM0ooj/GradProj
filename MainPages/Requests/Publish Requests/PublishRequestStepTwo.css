@@ -1,0 +1,101 @@
+.publish-request__column-one {
+  background-color: var(--white_a700);
+  box-shadow: var(--shadow-xs);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--space-xl);
+  border-radius: var(--radius-xl);
+}
+
+.publish-request__column-main {
+  margin-bottom: 4px;
+  margin-right: 22px;
+  gap: 80px;
+  display: flex;
+  width: 94%;
+  flex-direction: column;
+  @media only screen and (max-width: 1050px) {
+    width: 100%;
+    gap: 60px;
+    margin-right: 0px;
+  }
+
+  @media only screen and (max-width: 550px) {
+    gap: var(--space-13xl);
+  }
+}
+
+.publish-request__column-choose-journal {
+  margin-left: 14px;
+  margin-right: 14px;
+  gap: var(--space-11xl);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media only screen and (max-width: 1050px) {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+.publish-request__title {
+  align-self: flex-start;
+}
+
+.publish-request__row-scientific {
+  margin-left: 28px;
+  margin-right: 28px;
+  gap: var(--space-6xl);
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  @media only screen and (max-width: 1050px) {
+    flex-direction: column;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+.publish-request__dropdown-scientific {
+  gap: var(--space-4xl);
+  align-self: center;
+  background-color: var(--gray_200_5e) !important;
+  box-shadow: 0 1px 1px 0 #0000003f !important;
+  width: 58%;
+  background-image: url(../public/images/img_chevron_down.svg);
+  background-repeat: no-repeat;
+  background-size: 26px;
+  background-position: calc(100% - 18px);
+  padding: var(--space-lg) var(--space-5xl);
+  border-radius: 20px !important;
+  border: 1px solid var(--black_900_26);
+  @media only screen and (max-width: 1050px) {
+    width: 100%;
+  }
+}
+
+.publish-request__title-transaction {
+  margin-left: 14px;
+  @media only screen and (max-width: 1050px) {
+    margin-left: 0px;
+  }
+}
+
+.publish-request__label-price-offer {
+  color: var(--black_900_99) !important;
+  margin-top: 20px;
+  margin-left: 44px;
+  @media only screen and (max-width: 1050px) {
+    margin-left: 0px;
+  }
+}
+
+.publish-request__row-navigation {
+  margin-top: 366px;
+  align-self: stretch;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}

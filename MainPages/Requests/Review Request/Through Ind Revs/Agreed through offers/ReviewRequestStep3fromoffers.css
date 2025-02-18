@@ -1,0 +1,38 @@
+.rowprice-1 {
+  background-color: var(--blue_gray_50);
+  width: 32%;
+  display: flex;
+  justify-content: flex-end;
+  padding: var(--space-lg) var(--space-7xl);
+  border: 1px solid var(--black_900_2d);
+  @media only screen and (max-width: 1050px) {
+    width: 100%;
+  }
+
+  @media only screen and (max-width: 550px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.transferring-1 {
+  color: var(--black_900) !important;
+  margin-top: 70px;
+}
+
+.price-2 {
+  color: var(--black_900_99) !important;
+  margin-left: 388px;
+  font-family: Inria Serif !important;
+  @media only screen and (max-width: 1050px) {
+    margin-left: 0px;
+  }
+}
+
+.rowback-2 {
+  margin-top: 212px;
+  align-self: stretch;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
