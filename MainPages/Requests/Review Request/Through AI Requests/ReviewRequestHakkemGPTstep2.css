@@ -41,15 +41,16 @@
 }
 
 .review-section__steps {
-  gap: var(--space-6xl);
-  display: flex;
+  gap: 22px;
+  display: relative;
   align-self: stretch;
   flex-direction: column;
 }
 
 .review-section__lines-row {
-  gap: var(--space-13xl);
+  gap: 40px;
   display: flex;
+  border-top: 10px;
 }
 
 .review-section__line--64 {
@@ -61,19 +62,19 @@
 .review-section__line--65 {
   height: 1px;
   background-color: var(--gray_400_01);
-  width: 52%;
+  width: 42%;
 }
 
 .review-section__icon-button {
-  height: 40px;
+  height: 50px;
   margin-top: -20px;
   margin-left: 100px;
   padding-left: var(--space-xl);
   padding-right: var(--space-xl);
   position: relative;
   background-color: var(--teal_800) !important;
-  width: 40px;
-  border-radius: 20px !important;
+  width: 50px;
+  border-radius: 30px !important;
   border: 2px solid var(--teal_800_cc);
   @media only screen and (max-width: 1050px) {
     margin-left: 0px;
@@ -81,12 +82,12 @@
 }
 
 .review-section__view {
-  height: 40px;
-  margin-top: -40px;
-  margin-right: 22px;
+  height: 50px;
+  margin-top: -50px;
+  margin-right: 20px;
   position: relative;
-  width: 40px;
-  border-radius: var(--radius-4xl);
+  width: 50px;
+  border-radius: 30px;
   border: 2px solid var(--teal_800_cc);
   @media only screen and (max-width: 1050px) {
     margin-right: 0px;
