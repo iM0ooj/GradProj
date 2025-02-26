@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Review Options at Hakkem - AI or Expert Feedback</title>
+    <title>Review By AI or Expert Feedback</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -17,60 +17,50 @@
     <link rel="stylesheet" type="text/css" href="ReviewRequestOptions.css" />
   </head>
   <body>
-    <!-- review options section -->
-    <div class="review-option container-r overlay1">
-      <div class="review-options__column">
-        <div class="review-options__content">
-          <h1 class="review-options__description text_container">
-            You can review your research using AI through HAKKEMGPT or choose an
-            independent reviewer for expert feedback !
-          </h1>
-          <div>
-            <div class="review-options__options-column">
-              <div class="review-options__divider"></div>
-              <div class="review-options__options-row">
-                <div class="review-options__ai-assistant-container">
-                  <div class="review-options__ai-assistant-column">
-                    <img
-                      src="../../../public/images/img_ai_assistant_14247371.svg"
-                      alt="Aiassistant"
-                      class="review-options__ai-assistant-image"
-                    />
-                    <div class="review-options__ai-assistant-text-container">
-                      <h2 class="review-options-text text_container">
-                        Through
-                      </h2>
-                      <button
-                        class="review-options__ai-assistant-button ui button teal_800 size-6xl fill"
-                      >
-                        HAKKEMGPT
-                      </button>
+    <div class="review-option container-r overlay">
+        <div class="review-options__column">
+            <div class="review-options__content">
+                <!-- <button id="closeReviewOverlay" class="close-button">X</button> --> <!-- زر الإغلاق -->
+                <h1 class="review-options__description text_container">
+                    You can review your research using AI through HAKKEMGPT or choose an
+                    independent reviewer for expert feedback!
+                </h1>
+                <div>
+                    <div class="review-options__options-column">
+                        <div class="review-options__divider"></div>
+                        <div class="review-options__options-row">
+                            <div class="review-options__ai-assistant-container">
+                                <div class="review-options__ai-assistant-column">
+                                    <img src="../../../public/images/img_ai_assistant_14247371.svg"
+                                        alt="Aiassistant" class="review-options__ai-assistant-image" />
+                                    <div class="review-options__ai-assistant-text-container">
+                                        <h2 class="review-options-text text_container">Through</h2>
+                                        <a class="review-options__ai-assistant-button ui button teal_800 size-6xl fill" href="./Through AI Requests/ReviewRequestHakkemGPTstep1.html">
+                                          HAKKEMGPT
+                                      </a>
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="review-options__independent-divider"></div>
+                            <div class="review-options__independent-review-container">
+                                <div class="review-options__independent-column ">
+                                    <img src="../../../public/images/img_user_564710_1.svg" alt="User564710one"
+                                        class="review-options__independent-image" />
+                                    <div class="review-options__ai-assistant-text-container">
+                                        <h2 class="review-options_independent-text text_container">By An</h2>
+                                        <button
+                                            class="review-options__independent-button ui button teal_800 size-6xl fill">
+                                            Independent Reviewer
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
-                <div class="review-options__independent-divider"></div>
-                <div class="review-options__independent-review-container">
-                  <div class="review-options__independent-column ">
-                    <img
-                      src="../../../public/images/img_user_564710_1.svg"
-                      alt="User564710one"
-                      class="review-options__independent-image"
-                    />
-                    <div class="review-options__ai-assistant-text-container">
-                      <h2 class=" review-options_independent-text text_container">By An</h2>
-                      <button
-                        class="review-options__independent-button ui button teal_800 size-6xl fill"
-                      >
-                        Independent Reviewer
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
   </body>
 </html>
