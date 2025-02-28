@@ -2,6 +2,73 @@
 1. Common CSS
 2. Page CSS
 ==========================================*/
+/* header */
+.header__menu-item-1 {
+  color: var(--black_900_99) !important;
+}
+
+.header__brand-name {
+  color: var(--gray_900_01) !important;
+  font-family: Gravitas One !important;
+  @media only screen and (max-width: 1440px) {
+    font-size: 13px;
+  }
+}
+
+.header__navigation-row {
+  gap: var(--space-xl);
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  @media only screen and (max-width: 550px) {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+.header__menu-row {
+  padding-left: var(--space-xl);
+  padding-right: var(--space-xl);
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  @media only screen and (max-width: 550px) {
+    align-self: stretch;
+  }
+}
+
+.header__menu-1 {
+  margin-top: 16px !important;
+  gap: var(--space-9xl);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header__profile-image {
+  height: 60px;
+  width: 14%;
+  object-fit: contain;
+  @media only screen and (max-width: 550px) {
+    width: 100%;
+  }
+}
+
+.header__logo-column {
+  padding-left: var(--space-md);
+  padding-right: var(--space-md);
+  gap: var(--space-xs);
+}
+
+.header__logo-1 {
+  height: 48px;
+  margin-left: 4px;
+  width: 80%;
+  object-fit: contain;
+  @media only screen and (max-width: 1050px) {
+    margin-left: 0px;
+  }
+}
 
 /*-------------------------------------
   1. Common CSS
@@ -49,8 +116,8 @@
 
 .row_one-1 {
   height: 1116px;
-  width: 1728px;
-  background-image: url(../public/images/img_group_343.png);
+  width: auto;
+  background-image: url(../../public/images/img_group_343.png);
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -351,7 +418,7 @@
 }
 
 .row_two {
-  width: 1728px;
+  width: auto;
 }
 
 .rowchoosetypeof {
@@ -663,7 +730,7 @@
 
 .row_four {
   margin-top: 212px;
-  width: 1728px;
+  width: auto;
 }
 
 .row_three-1 {
@@ -845,7 +912,7 @@
 .footer-1 {
   padding-left: var(--space-3xl);
   padding-right: var(--space-3xl);
-  width: 1728px;
+  width: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;

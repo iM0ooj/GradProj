@@ -12,37 +12,42 @@
   align-items: center;
 }
 
-
 .review-option {
   display: flex;
   justify-content: center;
-  width: 944px;
 }
 
 .container-r {
-  width: 1000px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .section__column-1 {
-  background-color: var(--white_a700);
-  box-shadow: var(--shadow-xs);
+  background-color: #ffffff;
+  box-shadow:0 4px 4px 0 #0000003f;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: var(--space-6xl);
-  border-radius: var(--radius-xl);
+  padding: 20px;
+  border-radius: 10px;
 }
 
 .section-footer {
   margin-bottom: 4px;
-  margin-right: 26px;
+  margin-right: 20px;
   gap: 152px;
   display: flex;
   width: 96%;
   flex-direction: column;
+}
+
+.columnheaderlog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
 }
 
 /* Stages css */
@@ -77,6 +82,12 @@
 }
 
 /* Textfield Content */
+.research-detail__wrapper {
+  margin-left: 16px;
+  margin-right: 16px;
+  align-self: stretch;
+}
+
 .research-detail-row{
 display: flex;
 flex-direction: column;
@@ -166,7 +177,6 @@ label:hover {
   gap: 300px;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 50px;
 }
 
 .action-button__button--cancel {
