@@ -1,75 +1,145 @@
-.form__signup-1 {
-  gap: 76px;
+
+body {
+  background: #BAB8AB;
+  font-family: 'Headland One', serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+
+.logo-section {
+  position: absolute;
+  top: 5px;
   display: flex;
-  background-color: var(--white_a700_b2);
-  width: 80%;
   flex-direction: column;
   align-items: center;
-  padding: 46px;
-  border-radius: var(--radius-14xl);
-  @media only screen and (max-width: 1440px) {
-    width: 100%;
-    gap: 76px;
-  }
-
-  @media only screen and (max-width: 1050px) {
-    width: 100%;
-    gap: 57px;
-    padding: 20px;
-  }
-
-  @media only screen and (max-width: 550px) {
-    gap: var(--space-12xl);
-    padding: var(--space-4xl);
-  }
+  text-align: center;
 }
 
-.form__fields-2 {
-  margin-bottom: 30px;
-  gap: var(--space-14xl);
-  display: flex;
-  width: 88%;
-  flex-direction: column;
-  @media only screen and (max-width: 1440px) {
-    width: 100%;
-  }
-
-  @media only screen and (max-width: 1050px) {
-    width: 100%;
-  }
-
-  @media only screen and (max-width: 550px) {
-    gap: 29px;
-  }
+.logo {
+  width: 95px;
 }
 
-.form__button--signup-2 {
-  color: var(--white_a700) !important;
-  margin-left: 120px;
-  margin-right: 118px;
-  padding-left: 33px;
-  padding-right: 33px;
-  font-size: 32px;
-  font-weight: 700;
-  background-color: var(--gray_900_01) !important;
-  box-shadow: 0 10px 30px 0 #0000003f !important;
-  align-self: stretch;
-  height: 62px;
-  border-radius: 30px !important;
-  border: 1px solid var(--gray_900_04);
-  @media only screen and (max-width: 1440px) {
-    font-size: 27px;
-  }
+.brand-name {
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'Headland One', serif;
+  color: #0B1D26;
+  margin-top: -5px;
+}
 
-  @media only screen and (max-width: 1050px) {
-    font-size: 26px;
-    margin-left: 0px;
-    margin-right: 0px;
-  }
 
-  @media only screen and (max-width: 550px) {
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.form-background {
+    background: linear-gradient(180deg, #BAB8AB 0, #97968d 130%);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 500px;
+}
+
+
+h2 {
+    color: #0B1D26;
     font-size: 24px;
-    padding-left: var(--space-4xl);
-    padding-right: var(--space-4xl);
-  }
+}
+
+
+form input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 20px;
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: -5px;
+  text-align: left;
+  padding-left: 10px;
+  display: none; 
+}
+
+
+.signup-btn {
+    background-color: #0B1D26;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    width: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.signup-btn:hover {
+    background-color: #09202a;
+}
+
+
+.file-upload-container {
+  display: flex;
+  align-items: center;
+  width: 104%;
+  margin: 10px 0;
+  position: relative;
+}
+
+.file-input-wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.file-upload-container input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 4px 4px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  font-size: 14px;
+  text-align: left;
+  padding-right: 40px;
+}
+
+
+.file-upload-icon {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  background: none;
+  color: #0B1D26;
+}
+@media (max-width: 768px) {
+    .form-background {
+        width: 90%;
+        padding: 20px;
+    }
+    h2 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-background {
+        width: 95%;
+        padding: 15px;
+    }
+    h2 {
+        font-size: 20px;
+    }
 }
