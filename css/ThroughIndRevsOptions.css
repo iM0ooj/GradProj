@@ -1,6 +1,6 @@
-@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
 @import url("https://fonts.googleapis.com/css?family=Inria+Sans:700");
 
+/* Overlay Settings */
 .overlay {
   display: none;
   position: fixed;
@@ -28,6 +28,10 @@
   margin-right: auto;
 }
 
+/* ----------------------- */
+/*       Content CSS       */
+/* ----------------------- */
+
 .selection-container {
   padding: 42px 29px;
   position: relative;
@@ -49,7 +53,6 @@
   display: flex;
   justify-content: space-between;
   position: relative;
-  padding-top: 29px;
 }
 
 .selection-options::before {
@@ -81,7 +84,6 @@
 }
 
 .option-title {
-  font-family: "Inria Sans", Helvetica, sans-serif;
   font-weight: 700;
   color: #000000;
   font-size: 32px;
@@ -89,10 +91,10 @@
 }
 
 .option-icon {
-  width: 60px;
-  height: 60px;
+  width: 120px;
+  height: 120px;
   object-fit: cover;
-  margin-bottom: 63px;
+  margin-bottom: 20px;
 }
 
 .option-button {
@@ -113,31 +115,8 @@
 }
 
 .button-text {
-  font-family: "Inria Sans", Helvetica, sans-serif;
   font-weight: 700;
   color: #ffffff;
   font-size: 30px;
   white-space: nowrap;
-}
-
-@media (max-width: 768px) {
-  .selection-container {
-    width: 100%;
-    padding: 20px;
-  }
-
-  .selection-options {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .selection-options::after {
-    display: none;
-  }
-
-  .option-left,
-  .option-right {
-    width: 100%;
-    margin-bottom: 30px;
-  }
 }

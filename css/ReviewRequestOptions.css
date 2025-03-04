@@ -22,7 +22,6 @@
 }
 
 .container-r {
-  /*  width: 944px; */
   margin-left: auto;
   margin-right: auto;
 }
@@ -101,7 +100,6 @@
   height: 66px;
   min-width: 220px;
   border-radius: 30px !important;
-  /* margin-right: 50px;*/
 }
 
 .review-options__independent-review-container {
