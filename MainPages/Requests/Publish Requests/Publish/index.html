@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publish Request Steps</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="progress-bar">
+            <div class="step active">Step 1</div>
+            <div class="step">Step 2</div>
+            <div class="step">Step 3</div>
+        </div>
+
+        <div class="form-step active">
+            <h2>Please Fill in the following research details:</h2>
+            <label>Research Title:</label>
+            <input type="text" id="researchTitle">
+
+            <label>Research Field:</label>
+            <select id="researchField">
+                <option value="">Select Field</option>
+                <option value="Computer Science">Computer Science</option>
+                <option value="Biology">Biology</option>
+            </select>
+
+            <label>Research Abstract:</label>
+            <textarea id="researchAbstract"></textarea>
+
+            <label>Research File:</label>
+            <input type="file" id="researchFile">
+
+            <div class="buttons">
+                <button class="cancel">Cancel</button>
+                <button class="next">Next</button>
+            </div>
+        </div>
+
+        <div class="form-step">
+            <h2>Choose Journal To Receive Your Request</h2>
+            <label>Scientific Journal:</label>
+            <select id="journal">
+                <option>International Journal of Computer Science</option>
+            </select>
+
+            <h3>Transaction Details</h3>
+            <p>Price offer: <strong>1,000.00 SAR</strong></p>
+
+            <div class="buttons">
+                <button class="back">Back</button>
+                <button class="next">Next</button>
+            </div>
+        </div>
+
+        <div class="form-step">
+            <h2>Request Details:</h2>
+
+            <h3>Personal Details:</h3>
+            <p><strong>Name:</strong> Jomanh Saeed M Alqahtani</p>
+            <p><strong>Email:</strong> jsalqhatani@nu.edu.sa</p>
+            <p><strong>Phone:</strong> 050 636 4092</p>
+
+            <h3>Request Details:</h3>
+            <p><strong>Request ID:</strong> #669948474</p>
+            <p><strong>Request Type:</strong> Publish Request</p>
+            <p><strong>Recipient:</strong> International Journal of Computer Science and Information Security (IJCSIS)</p>
+            <p><strong>Status:</strong> To Be Accepted</p>
+            <p><strong>Date:</strong> 20-01-2025 at 8:51 AM</p>
+
+            <h3>Transaction Details:</h3>
+            <p><strong>Transaction ID:</strong> #669948474</p>
+            <p><strong>Status:</strong> Not Yet Transferred</p>
+            <p><strong>Amount:</strong> 1,000.00 SAR</p>
+
+            <div class="buttons">
+                <button class="back">Back</button>
+                <button class="confirm">Confirm</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
