@@ -1,68 +1,30 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Create a New Hakkem Account - Sign Up Today</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Join Hakkem and start contributing to the peer-review process. Sign up as an individual or organization to collaborate in the academic research community."
-    />
-    <img
-      alt="Logo"
-      src="https://appproject.dhiwise.com/dhiwise-logo.png?c=&v="
-      style="width: 0px; height: 0px; display: none"
-    />
-    <link rel="stylesheet" type="text/css" href="./css/index.css" />
-    <link rel="stylesheet" type="text/css" href="./css/font.css" />
-    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
-    <link rel="stylesheet" type="text/css" href="./css/components.css" />
-    <link rel="stylesheet" type="text/css" href="./css/MainSignUpForm.css" />
-  </head>
-  <body>
-    <!-- signup section -->
-    <div class="main-sign-up-form">
-      <!-- logo section -->
-      <div class="sign-in-form__header">
-        <p class="sign-in-form__header__title ui text size-text6xl">HAKKEM</p>
-      </div>
-      <div class="sign-in-form">
-        <!-- account creation section -->
-        <div class="signup-form__account-creation">
-          <a href="#">
-            <p class="signup-form__title-1 ui text size-text5xl">Create Account</p>
-          </a>
-          <div class="signup-form__input-group">
-            <label class="signup-form__input--first-name ui input blue_gray_50_4c size-lg fill round">
-              <input name="firstName" placeholder="First Name" type="text" />
-            </label>
-            <label class="signup-form__input--first-name ui input blue_gray_50_4c size-lg fill round">
-              <input name="lastName" placeholder="Last Name" type="text" />
-            </label>
-            <label class="signup-form__input--first-name ui input blue_gray_50_4c size-lg fill round">
-              <input name="password" placeholder="Password" type="password" />
-            </label>
-            <label class="signup-form__input--first-name ui input blue_gray_50_4c size-lg fill round">
-              <input name="confirmpassword" placeholder="Confirm Password" type="password" />
-            </label>
-            <div class="signup-form__actions">
-              <button class="signup-form__button--individual ui button gray_900_01 size-7xl fill">
-                Individual SIGN UP
-              </button>
-              <button class="signup-form__button--organization ui button blue_gray_50 size-7xl fill">
-                Organization SIGN UP
-              </button>
-              <div class="signup-form__signin-option">
-                <h1 class="sign-in-form__signup-text ui heading size-headingmd">Already have an account?</h1>
-                <a href="https://www.youtube.com/embed/bv8Fxk0sz7I" target="_blank">
-                  <h2 class="sign-in-form__signup-link ui heading size-headinglg">Sign In</h2>
-                </a>
-              </div>
-            </div>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HAKKEM - Select User Type</title>
+  <link rel="stylesheet" href="MainSignUpForm.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Candal&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- اللوقو -->
+  <header>
+    <div class="container">
+        <div class="logo-section">
+            <img src="../../public/Proj-Pictures/Dark-logo.png" alt="Hakkem Logo" class="logo">
+            <p class="brand-name">HAKKEM</p>
         </div>
-      </div>
-    </div>
-  </body>
+  </header>
+        <h1>Welcome To HAKKEM...</h1>
+        <p>Select the User type to start creating your account...</p>
+  <!-- نوع المستخدم -->
+  <div class="user-type-container">
+    <a href="../SIGNIN - SIGNUP/UniversitySignUpForm.html" class="user-type-btn">University</a>
+    <a href="../SIGNIN - SIGNUP/JournalSignUpForm.html" class="user-type-btn">Journal</a>
+    <a href="../SIGNIN - SIGNUP/IndividualSignUpForm.html" class="user-type-btn">Researcher</a>
+    <a href="../SIGNIN - SIGNUP/IndividualSignUpForm.html" class="user-type-btn">Reviewer</a>
+</div>
+</body>
 </html>

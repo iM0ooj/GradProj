@@ -1,178 +1,161 @@
-.main-sign-in-form {
-  background-color: var(--gray_400);
-  width: 100%;
+/* إعدادات البودي */
+body {
+  font-family: 'Candal', sans-serif;
+  background-color: #BAB8AB;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
-  padding: var(--space-13xl) 72px var(--space-13xl) 56px;
-  @media only screen and (max-width: 1440px) {
-    padding-right: var(--space-10xl);
-  }
-
-  @media only screen and (max-width: 1050px) {
-    flex-direction: column;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  @media only screen and (max-width: 550px) {
-    padding: var(--space-4xl);
-  }
+  height: 100vh;
+  margin: 0;
 }
 
-.sign-in-form__content {
-  gap: var(--space-16xl);
+/* الحاوية الرئيسه */
+.container {
+  position: absolute;
+  top: 30px;
+  left: 40px;
   display: flex;
-  background-color: var(--white_a700_b2);
-  width: 82%;
+  flex-direction:column ;
+  align-items: center;
+ text-align: center;
+}
+
+.logo-section {
+  position: absolute;
+  top: 10px;
+  left: 60px;
+  display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 96px 56px;
-  border-radius: var(--radius-14xl);
-  @media only screen and (max-width: 1440px) {
-    width: 100%;
-    gap: 106px;
-    padding-top: var(--space-10xl);
-    padding-bottom: var(--space-10xl);
-  }
-
-  @media only screen and (max-width: 1050px) {
-    width: 100%;
-    gap: 106px;
-    padding: 20px;
-  }
-
-  @media only screen and (max-width: 550px) {
-    gap: 71px;
-    padding: var(--space-4xl);
-  }
-}
-
-.sign-in-form__title {
-  color: var(--gray_900_e0) !important;
-  font-family: Candal !important;
   text-align: center;
-  width: 68%;
-  line-height: 62px;
-  @media only screen and (max-width: 1440px) {
-    width: 100%;
-    font-size: 40px;
-  }
-
-  @media only screen and (max-width: 1050px) {
-    width: 100%;
-    font-size: 32px;
-  }
-
-  @media only screen and (max-width: 550px) {
-    font-size: 26px;
-  }
 }
 
-.sign-in-form__fields {
-  margin-bottom: 144px;
+.logo {
+  width: 85px; 
+}
+
+.brand-name {
+  font-size: 13px;
+  font-weight: bold;
+  font-family: 'Gravitas One', cursive;
+  color: #0B1D26;
+  margin-top: -5px;
+}
+
+
+/* قسم الفورم */
+.form-container {
+  position: fixed;
+  top: 20%;
+  left: 30%;
+  transform: translate(-50, -50);
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 40px;
+  border-radius: 50px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 400px;
+  min-width: 400px;
+  max-width: 500px;
+}
+
+/* عنوان تسجيل الدخول */
+.form-title {
+  font-size: 20px;
+  color: rgba(11, 29, 38, 0.88);
+  margin-bottom: 20px;
+}
+
+/* الحقول */
+input {
   width: 90%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  @media only screen and (max-width: 1440px) {
-    width: 100%;
-  }
+  padding: 11px;
+  border: 1px solid #ccc;
+  border-radius: 200px;
+  font-size: 15px;
+  background: white;
+  box-shadow: 
+      inset 0px 1px 1px rgba(0, 0, 0, 0.2), /* Inner Shadow */
+      0px 4px 4px rgba(0, 0, 0, 0.2); /* Drop Shadow */
+      margin-bottom: 19px;
+}
+.input::placeholder{
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.9);
+  text-align: right;
 
-  @media only screen and (max-width: 1050px) {
-    width: 100%;
-  }
 }
 
-.sign-in-form__email-input {
-  color: var(--black_900_7f) !important;
-  padding-left: 34px;
-  padding-right: 34px;
-  font-size: 24px;
-  font-weight: 700;
-  border-color: var(--black_900_66);
-  border-bottom-width: 1px;
-  background-color: var(--blue_gray_50_4c) !important;
-  box-shadow: 0 4px 4px 0 #0000003f !important;
-  align-self: stretch;
-  height: 58px;
-  border-radius: 28px !important;
-  @media only screen and (max-width: 550px) {
-    padding-left: var(--space-4xl);
-    padding-right: var(--space-4xl);
-  }
+/* رابط نسيان كلمة المرور */
+.forgot-password {
+  display: block;
+  margin: 10px 0;
+  font-size: 14px;
+  color: #0B1D26;
+  text-decoration: normal;
 }
 
-.sign-in-form__password-input {
-  color: var(--black_900_7f) !important;
-  margin-top: 62px;
-  padding-left: 34px;
-  padding-right: 34px;
-  font-size: 24px;
-  font-weight: 700;
-  border-color: var(--black_900_66);
-  border-bottom-width: 1px;
-  background-color: var(--blue_gray_50_4c) !important;
-  box-shadow: 0 4px 4px 0 #0000003f !important;
-  align-self: stretch;
-  height: 58px;
-  border-radius: 28px !important;
-  @media only screen and (max-width: 550px) {
-    padding-left: var(--space-4xl);
-    padding-right: var(--space-4xl);
-  }
+/* زر تسجيل الدخول */
+button {
+  width: 60%;
+  padding: 12px;
+  background-color: #0B1D26;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 10px;
 }
 
-.sign-in-form__forgot-password {
-  color: var(--black_900_4c) !important;
-  margin-top: 8px;
-  margin-left: 22px;
-  align-self: flex-start;
-  @media only screen and (max-width: 1440px) {
-    font-size: 13px;
-  }
-
-  @media only screen and (max-width: 1050px) {
-    margin-left: 0px;
-  }
+button:hover {
+  background-color: #09202a;
 }
 
-.sign-in-form__submit-button {
-  color: var(--white_a700) !important;
-  margin-top: 66px;
-  margin-left: 120px;
-  margin-right: 120px;
-  padding-left: 33px;
-  padding-right: 33px;
-  font-size: 32px;
-  font-weight: 700;
-  background-color: var(--gray_900_01) !important;
-  box-shadow: 0 10px 30px 0 #0000003f !important;
-  align-self: stretch;
-  height: 78px;
-  border-radius: 38px !important;
-  border: 1px solid var(--gray_900_04);
-  @media only screen and (max-width: 1440px) {
-    font-size: 27px;
-  }
-
-  @media only screen and (max-width: 1050px) {
-    font-size: 26px;
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-
-  @media only screen and (max-width: 550px) {
-    font-size: 24px;
-    padding-left: var(--space-4xl);
-    padding-right: var(--space-4xl);
-  }
+/* نص إنشاء حساب */
+.signup-text {
+  margin-top: 15px;
+  font-size: 13px;
+  
 }
 
-.sign-in-form__signup-options {
-  margin-top: 42px;
-  gap: var(--space-xl);
-  display: flex;
-  align-items: flex-start;
-  flex-wrap: wrap;
+.signup-text a {
+  color: #0B1D26;
+  font-weight: bold;
+  text-decoration: underline;
+}
+@media (max-width: 768px) {
+    .form-container {
+        width: 90%; 
+        max-width: 400px;
+        padding: 30px;
+    }
+
+    input {
+        width: 100%; 
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-container {
+        width: 95%; 
+        max-width: 350px;
+        padding: 20px;
+    }
+
+    .form-title {
+        font-size: 20px; 
+    }
+
+    input {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 16px;
+    }
 }
