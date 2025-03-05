@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Independent Review Request (AI)</title>
-    <link rel="stylesheet" href="/css/Rev-Review-Request.css" />
+    <title>Independent Review Request (Offers)</title>
+    <link rel="stylesheet" href="/css/Offers-Review-Request.css" />
   </head>
   <body>
     <div class="overlay">
@@ -72,7 +72,7 @@
             <!-- Buttons of step 1 -->
             <div class="buttons">
               <button class="cancel">Cancel</button>
-              <button class="next">Create Review List</button>
+              <button class="next">Next</button>
             </div>
           </div>
 
@@ -80,31 +80,26 @@
                       Step 2 
           ----------------------------->
           <div class="form-step">
-            <div class="content-list">
+            <div class="content">
+              <!-- خانة البحث -->
               <!-- 
-              حطيت آيفريمز عشان يعرض محتوى البروفايل كارد مبدئيا، مو
-              أفضل حل لكن بعد ما نشوف كيف بتكون الباك اند للكارد بنعدل عليها
+              الدالة في الاون تشينج هي المسؤولة عن البحث عن 
+              آي دي المستخدم وتجيب الكارد حقه وتعرضه هنا
               -->
-              <iframe
-                src="../Agreed through offers/usercontainer.html"
-                frameborder="0"
-              ></iframe>
-              <iframe
-                src="../Agreed through offers/usercontainer.html"
-                frameborder="0"
-              ></iframe>
-              <iframe
-                src="../Agreed through offers/usercontainer.html"
-                frameborder="0"
-              ></iframe>
-              <iframe
-                src="../Agreed through offers/usercontainer.html"
-                frameborder="0"
-              ></iframe>
-              <iframe
-                src="../Agreed through offers/usercontainer.html"
-                frameborder="0"
-              ></iframe>
+              <div class="searchbar">
+                <input
+                  type="search"
+                  class="inp"
+                  id="userId"
+                  placeholder="Search user ID ..."
+                  size="30"
+                  onchange="profileCard()"
+                  required
+                />
+              </div>
+
+              <!-- المسؤول عن عرض محتوى الكارد -->
+              <div id="user"></div>
             </div>
 
             <!-- Buttons of Step 2 -->
@@ -125,10 +120,17 @@
                 <div class="setPrice-row">
                   <p><strong>Set price offer:</strong></p>
                   <div class="price-inp">
-                    <input type="number" />
-                    <p>SAR</p>
+                    <input
+                      type="number"
+                      id="price-input"
+                      max="50000"
+                      onchange="return check()"
+                      required
+                    />
+                    <span class="currency">SAR</span>
                   </div>
                 </div>
+                <div id="err" class="err-msg"></div>
               </div>
 
               <!-- الخط الفاصل -->
@@ -141,7 +143,7 @@
                   <div class="sent-fund">
                     <p>You Send</p>
                     <div class="amount-border">
-                      <p>1,000.00</p>
+                      <p id="output-price"></p>
                       <p><strong>SAR</strong></p>
                     </div>
                   </div>
@@ -230,7 +232,7 @@
                       <img src="/public/images/timefill.svg" />
                       <span>Not Yet Transferred</span>
                     </div>
-                    <p>1,000.00 SAR</p>
+                    <p>2,100.00 SAR</p>
                   </div>
                 </div>
               </div>

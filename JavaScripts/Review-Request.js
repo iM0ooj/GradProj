@@ -75,4 +75,22 @@ function profileCard() {
   }
 }
 
+document.getElementById("price-input").addEventListener("input", function () {
+  document.getElementById("output-price").innerText = this.value;
+});
+
+function check() {
+  field = document.getElementById("price-input");
+  error = document.getElementById("err");
+  if (!field.checkValidity()) {
+    valid = false;
+    field.classList.add("err");
+    error.innerHTML = "Price must be less than 50,000.00 SAR";
+  } else {
+    field.classList.remove("err");
+    error.innerHTML = "";
+  }
+  return valid;
+}
+
 showStep();
