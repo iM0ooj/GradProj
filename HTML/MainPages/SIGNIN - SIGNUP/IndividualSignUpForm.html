@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Researcher & Reviewer Sign Up</title>
-  <link rel="stylesheet" href="/CSS/IndividualSignUpForm.css">
+  <link rel="stylesheet" href="/CSS/MainPages/SIGNIN - SIGNUP/IndividualSignUpForm.css">
   <link href="https://fonts.googleapis.com/css2?family=Candal&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap" rel="stylesheet">
 </head>
@@ -16,7 +16,7 @@
   <header>
     <div class="container">
       <div class="logo-section">
-        <img src="../../public/Proj-Pictures/Dark-logo.png" alt="Hakkem Logo" class="logo">
+        <img src="/public/images/Dark-logo.png" alt="Hakkem Logo" class="logo">
         <p class="brand-name">HAKKEM</p>
       </div>
     </div>
@@ -50,52 +50,7 @@
   </div>
   </div>
 
-  <script>
-    function validateEmail() {
-      var emailInput = document.getElementById("email");
-      var emailError = document.getElementById("emailError");
-      var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-
-      if (!emailPattern.test(emailInput.value) && emailInput.value !== "") {
-        emailError.textContent = "Invalid email format. Example: example@domain.com";
-        emailError.style.display = "block";
-      } else {
-        emailError.style.display = "none";
-      }
-    }
-
-    document.addEventListener("DOMContentLoaded", function () {
-    let qualificationSelect = document.getElementById("qualification");
-    let bachelorField = document.getElementById("bachelor");
-    let masterField = document.getElementById("master");
-    let phdField = document.getElementById("phd");
-
-    // تعطيل جميع الحقول عند تحميل الصفحة
-    bachelorField.disabled = true;
-    masterField.disabled = true;
-    phdField.disabled = true;
-
-    qualificationSelect.addEventListener("change", function() {
-        let selectedValue = qualificationSelect.value;
-
-        // تعطيل جميع الحقول أولًا
-        bachelorField.disabled = true;
-        masterField.disabled = true;
-        phdField.disabled = true;
-
-        if (selectedValue === "Bachelor") {
-            bachelorField.disabled = false;  // تفعيل البكالوريوس 
-        } else if (selectedValue === "Master") {
-            bachelorField.disabled = false;  // تفعيل البكالوريوس
-            masterField.disabled = false;   // تفعيل الماجستير
-        } else if (selectedValue === "PhD") {
-            bachelorField.disabled = false;  // تفعيل البكالوريوس
-            masterField.disabled = false;   // تفعيل الماجستير
-            phdField.disabled = false;      // تفعيل الدكتوراه
-        }
-    });
-});
-  </script>
+  <script src="/JavaScripts/SignIn.js"></script>
 
 </body>
 

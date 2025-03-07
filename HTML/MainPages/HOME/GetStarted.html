@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Get Started Page</title>
-    <link rel="stylesheet" href="/JavaScripts/Get.js" />
     <link
       href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@700&display=swap"
       rel="stylesheet"
@@ -21,39 +20,39 @@
       href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@1,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/css/GetStarted.css" />
+    <link rel="stylesheet" href="/CSS/MainPages/HOME/GetStarted.css" />
   </head>
   <body>
     <!-- Header -->
-    <header class="header">
-      <div class="logo-container">
-        <img
-          src="/public/Proj-Pictures/Dark-logo.png"
-          alt="Logo"
-          class="logo"
-        />
-        <p class="brand-name">HAKKEM</p>
-      </div>
-      <div class="nav-container" id="nav-container">
-        <nav class="nav">
-          <a href="#" class="nav-link">Home</a>
-          <a href="#" class="nav-link">Journals</a>
-        </nav>
-        <a href="..//SIGNIN - SIGNUP/MainSignUpForm.html" class="signup-btn"
-          >Sign Up</a
-        >
-      </div>
-      <div class="menu-toggle" id="menu-toggle">☰</div>
-      <div class="mobile-menu" id="mobile-menu">
-        <a href="#" class="mobile-link">Home</a>
-        <a href="#" class="mobile-link">Journals</a>
-        <a
-          href="../SIGNIN - SIGNUP/MainSignInForm.html"
-          class="mobile-signup-btn"
-          >Sign In</a
-        >
-      </div>
-    </header>
+    <div class="center">
+      <header class="header">
+        <div class="logo-placeholder">
+          <img src="/public/images/Dark-logo.png" alt="Logo" class="logo" />
+          <p class="brand-name">HAKKEM</p>
+        </div>
+        <div class="nav-container" id="nav-container">
+          <nav class="nav">
+            <a href="#" class="nav-link">Home</a>
+            <a href="#" class="nav-link">Journals</a>
+          </nav>
+          <a
+            href="/HTML/MainPages/SIGNIN - SIGNUP/MainSignInForm.html"
+            class="signIn-btn"
+            >Sign In</a
+          >
+        </div>
+        <div class="menu-toggle" id="menu-toggle">☰</div>
+        <div class="mobile-menu" id="mobile-menu">
+          <a href="#" class="mobile-link">Home</a>
+          <a href="#" class="mobile-link">Journals</a>
+          <a
+            href="/HTML/MainPages/SIGNIN - SIGNUP/MainSignInForm.html"
+            class="mobile-signup-btn"
+            >Sign In</a
+          >
+        </div>
+      </header>
+    </div>
 
     <!-- الجزء الأول -->
     <section class="hero-section">
@@ -65,9 +64,12 @@
         <p class="subtitle">TO REVIEW AND PUBLISH YOUR RESEARCHES...</p>
       </div>
 
-      <a href="../SIGNIN - SIGNUP/MainSignUpForm.html" class="get-started-btn">
+      <a
+        href="/HTML/MainPages/SIGNIN - SIGNUP/MainSignUpForm.html"
+        class="get-started-btn"
+      >
         <img
-          src="/public/images/img_arrow_left.svg"
+          src="/public/images/Get-Started/GetStarted_Arrow.svg"
           alt="Arrow Icon"
           class="arrow-icon"
         />
@@ -91,7 +93,7 @@
         </div>
         <div class="get-started-image">
           <img
-            src="/public/Proj-Pictures/Getstarted-Images/Getstarted-1.png"
+            src="/public/images/Get-Started/GetStarted-img3.png"
             alt="Digital Review Illustration"
           />
         </div>
@@ -103,7 +105,7 @@
       <div class="ai-review-container">
         <div class="ai-review-image">
           <img
-            src="/public/Proj-Pictures/Getstarted-Images/Getstarted-2.png"
+            src="/public/images/Get-Started/GetStarted-img4.png"
             alt="AI Review Illustration"
           />
         </div>
@@ -139,7 +141,7 @@
         </div>
         <div class="quality-assurance-image">
           <img
-            src="/public/Proj-Pictures/Getstarted-Images/Getstarted-3.png"
+            src="/public/images/Get-Started/GetStarted-img5.png"
             alt="Quality Assurance Illustration"
           />
         </div>
@@ -148,43 +150,29 @@
 
     <!-- footer -->
     <div class="footer-separator"></div>
-    <footer class="footer">
-      <div class="footer-container">
-        <div class="footer-links">
-          <a href="#">Help/FAQ</a>
-          <a href="#">Terms</a>
-          <a href="#">Privacy Policy</a>
-          <a href="../HOME/AboutUs.html">About Hakkem</a>
+    <div class="center">
+      <footer>
+        <div class="left">
+          <p class="Footer-link">Help</p>
+          <p>|</p>
+          <p class="Footer-link">FAQ</p>
+          <p>|</p>
+          <p class="Footer-link">Terms</p>
+          <p>|</p>
+          <p class="Footer-link">Pivacy Policy</p>
+          <p>|</p>
+          <p class="Footer-link">About Hakkem</p>
         </div>
-        <div class="footer-rights">
-          <p>©2025 Hakkem. All Rights Reserved.</p>
+        <div class="Mid">
+          <p>© 2025 Hakkem. All Rights Reserved.</p>
         </div>
-        <div class="payment-methods">
-          <img src="/public/images/img_vector.svg" alt="Visa" />
-          <img src="/public/images/img_icon_payment.png" alt="Apple Pay" />
-          <img src="/public/images/img_icon_paypal.svg" alt="PayPal" />
+        <div class="right">
+          <img src="/public/images/Header - Footer/Payment-visaCard.png" />
+          <img src="/public/images/Header - Footer/Payment-applepay.svg" />
+          <img src="/public/images/Header - Footer/Payment-paypal.svg" />
         </div>
-      </div>
-    </footer>
-    <!-- <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const menuToggle = document.getElementById("menu-toggle");
-        const mobileMenu = document.getElementById("mobile-menu");
-
-        menuToggle.addEventListener("click", function () {
-          mobileMenu.style.display =
-            mobileMenu.style.display === "flex" ? "none" : "flex";
-        });
-
-        document.addEventListener("click", function (event) {
-          if (
-            !menuToggle.contains(event.target) &&
-            !mobileMenu.contains(event.target)
-          ) {
-            mobileMenu.style.display = "none";
-          }
-        });
-      });
-    </script> -->
+      </footer>
+    </div>
+    <script src="/JavaScripts/Get.js"></script>
   </body>
 </html>
