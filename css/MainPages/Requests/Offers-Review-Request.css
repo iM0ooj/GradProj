@@ -102,6 +102,36 @@ body {
   color: #ccc;
 }
 
+/* شعار الريال السعودي */
+/* Load font */
+@font-face {
+  font-family: "SAR";
+  src: url("/public/fonts/sar_shopvert.woff2") format("woff2"),
+    url("/public/fonts/sar_shopvert.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Base style */
+#riyal {
+  margin-right: 5px;
+}
+.icon {
+  font-family: "SAR";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Icon class */
+.icon-home:before {
+  content: "\e900";
+}
+
 /* Common CSS */
 .form-step {
   display: none;
@@ -112,6 +142,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   height: 520px;
+  padding: 20px;
 }
 
 h2 {
@@ -224,25 +255,6 @@ p strong {
   justify-content: center;
 }
 
-.dropdownlist {
-  box-shadow: 0 1px 1px 0 #0000003f !important;
-  width: 100%;
-  border-radius: 10px !important;
-  border: 1px solid #00000026;
-}
-
-.chevron {
-  display: inline-block;
-  border-right: 4px solid #00000090;
-  border-bottom: 4px solid #00000090;
-  width: 10px;
-  height: 10px;
-}
-
-#chevron-arrow-up {
-  transform: rotate(45deg);
-}
-
 .row {
   margin: 5px 10px 35px 10px;
   display: flex;
@@ -314,7 +326,7 @@ p strong {
 .price-inp input {
   width: 100%;
   padding: 4px 10px 4px 10px;
-  padding-right: 50px;
+  padding-left: 50px;
   border: 1px solid #ccc;
   border-radius: 5px;
   text-align: right;
@@ -322,7 +334,7 @@ p strong {
 
 .price-inp .currency {
   position: absolute;
-  right: 10px;
+  left: 10px;
   font-weight: normal;
   color: #555;
 }

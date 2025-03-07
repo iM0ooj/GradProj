@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Independent Review Request (Offers)</title>
-    <link rel="stylesheet" href="/css/Offers-Review-Request.css" />
+    <link
+      rel="stylesheet"
+      href="/CSS/MainPages/Requests/Offers-Review-Request.css"
+    />
   </head>
   <body>
     <div class="overlay">
@@ -120,6 +123,9 @@
                 <div class="setPrice-row">
                   <p><strong>Set price offer:</strong></p>
                   <div class="price-inp">
+                    <span class="currency"
+                      ><span id="riyal" class="icon icon-home"></span
+                    ></span>
                     <input
                       type="number"
                       id="price-input"
@@ -127,7 +133,6 @@
                       onchange="return check()"
                       required
                     />
-                    <span class="currency">SAR</span>
                   </div>
                 </div>
                 <div id="err" class="err-msg"></div>
@@ -143,8 +148,8 @@
                   <div class="sent-fund">
                     <p>You Send</p>
                     <div class="amount-border">
+                      <p><span id="riyal" class="icon icon-home"></span></p>
                       <p id="output-price"></p>
-                      <p><strong>SAR</strong></p>
                     </div>
                   </div>
 
@@ -208,7 +213,7 @@
                     <p>Arwa Abdullah M AlYami</p>
                     <!-- حالة الطلب -->
                     <div class="state">
-                      <img src="/public/images/timefill.svg" />
+                      <img src="/public/images/Requests/timefill.svg" />
                       <span>To Be Accepted</span>
                     </div>
                     <p>20-01-2025 at 8:51 AM</p>
@@ -229,10 +234,12 @@
                   <div class="col2">
                     <p># 669948474</p>
                     <div class="state">
-                      <img src="/public/images/timefill.svg" />
+                      <img src="/public/images/Requests/timefill.svg" />
                       <span>Not Yet Transferred</span>
                     </div>
-                    <p>2,100.00 SAR</p>
+                    <p>
+                      <span id="riyal" class="icon icon-home"></span>2,100.00
+                    </p>
                   </div>
                 </div>
               </div>

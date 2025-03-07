@@ -1,146 +1,341 @@
-body { /* تحديد نمط الصفحة العامة */
-    font-family: Arial, sans-serif; /* نوع الخط */
-    background: #f5f5f5; /* لون الخلفية */
-    display: flex; /* استخدام Flexbox */
-    justify-content: center; /* توسيط المحتوى أفقيًا */
-    align-items: center; /* توسيط المحتوى عموديًا */
-    height: 100vh; /* جعل الصفحة بارتفاع الشاشة بالكامل */
+body {
+  /* تحديد نمط الصفحة العامة */
+  font-family: Arial, sans-serif; /* نوع الخط */
+  background: #f5f5f5; /* لون الخلفية */
+  display: flex; /* استخدام Flexbox */
+  justify-content: center; /* توسيط المحتوى أفقيًا */
+  align-items: center; /* توسيط المحتوى عموديًا */
+  height: 100vh; /* جعل الصفحة بارتفاع الشاشة بالكامل */
+  overflow: hidden;
 }
 
-.container { /* صندوق يحتوي على محتوى الصفحة */
-    background: white; /* لون الخلفية أبيض */
-    padding: 30px; /* مسافة داخلية */
-    border-radius: 15px; /* زوايا مستديرة */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* ظل خفيف للصندوق */
-    width: 50%; /* عرض بنسبة 50% من الشاشة */
-    max-width: 600px; /* أقصى عرض 600px */
-    position: relative; /* يسمح بتحديد المواقع داخله */
+.container {
+  /* صندوق يحتوي على محتوى الصفحة */
+  background: white; /* لون الخلفية أبيض */
+  padding: 30px; /* مسافة داخلية */
+  border-radius: 15px; /* زوايا مستديرة */
+  width: 50%; /* عرض بنسبة 50% من الشاشة */
+  max-width: 600px; /* أقصى عرض 600px */
+  position: relative; /* يسمح بتحديد المواقع داخله */
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.review-option {
+  display: flex;
+  justify-content: center;
+}
+
+.container-r {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content {
+  height: 584px;
 }
 
 /* شريط التقدم */
-.progress-bar { 
-    display: flex; /* توزيع العناصر أفقيًا */
-    justify-content: space-between; /* توزيع الخطوات بالتساوي */
-    margin-bottom: 50px; /* ترك مسافة أسفل الشريط */
-    padding-top: 10px; /* تقليل تداخل الشريط مع المحتوى */
-}
-
-.progress-bar .step { /* كل خطوة داخل شريط التقدم */
-    position: relative; /* يسمح بإضافة العناصر فوق بعضها */
-    text-align: center; /* توسيط النص */
-    width: 33%; /* توزيع الخطوات بالتساوي */
-    font-weight: bold; /* جعل النص عريض */
-    color: #555; /* لون النص رمادي */
-}
-
-.progress-bar .step.active { /* لون الخطوة النشطة */
-    color: #165c3e; /* أخضر غامق */
-}
-
-.progress-bar .step::after { /* الأيقونة داخل كل خطوة */
-    content: "✔"; /* علامة صح */
-    position: absolute; /* يسمح بتحديد المواقع بدقة */
-    top: 30px; /* المسافة من الأعلى */
-    left: 50%; /* توسيط الأيقونة */
-    transform: translateX(-50%); /* ضبط محاذاة الأيقونة */
-    background: #165c3e; /* لون خلفية الأيقونة */
-    color: white; /* لون النص أبيض */
-    border-radius: 50%; /* جعل الأيقونة دائرية */
-    width: 25px; /* عرض الأيقونة */
-    height: 25px; /* ارتفاع الأيقونة */
-    display: flex; /* استخدام flex لتوسيط المحتوى */
-    align-items: center; /* توسيط عمودي */
-    justify-content: center; /* توسيط أفقي */
-}
-
-.progress-bar .step:not(.active)::after { /* تنسيق الخطوات غير المكتملة */
-    background: #ccc; /* لون رمادي */
-    color: #ccc; /* نفس لون الخلفية لإخفاء علامة الصح */
-}
-
-/* تنسيق النص في الخطوة الثالثة */
-.form-step:nth-child(3) h3,
-.form-step:nth-child(3) p strong {
-    color: #000000; /* تغيير اللون إلى رمادي فاتح */
-    font-weight: normal; /* إزالة التحديد العريض */
-}
-
-.form-step { /* إخفاء كل الخطوات */
-    display: none;
-}
-
-.form-step.active { /* إظهار الخطوة النشطة فقط */
-    display: block;
-}
-
-h2 { /* عنوان كل صفحة */
-    color: #165c3e; /* لون العنوان */
-}
-
-label { /* تنسيق النصوص بجانب الحقول */
-    font-weight: bold; /* جعل النص عريض */
-    margin-top: 10px; /* ترك مسافة للأعلى */
-    display: block; /* جعل العنصر يأخذ سطرًا كاملاً */
-}
-
-input, select, textarea { /* تنسيق الحقول */
-    width: 100%; /* جعل العرض ممتدًا بالكامل */
-    padding: 8px; /* مسافة داخلية */
-    border-radius: 10px; /* زوايا مستديرة */
-    border: 1px solid #ccc; /* لون حدود الحقل */
-    margin-top: 5px; /* مسافة من الأعلى */
-}
-
-textarea { /* تخصيص حجم حقل النص */
-    height: 80px; /* تحديد الارتفاع */
-}
-
-.buttons { /* تنسيق أزرار الانتقال */
-    display: flex; /* ترتيب الأزرار بجانب بعضها */
-    justify-content: space-between; /* توزيعها بالتساوي */
-    margin-top: 20px; /* مسافة من الأعلى */
-}
-
-button { /* تصميم الأزرار */
-    padding: 10px 20px; /* حجم الأزرار */
-    border: none; /* إزالة الحدود */
-    border-radius: 10px; /* جعلها مستديرة */
-    cursor: pointer; /* تغيير شكل المؤشر عند التمرير */
-    font-size: 14px; /* حجم الخط */
-}
-
-.cancel { /* تنسيق زر الإلغاء */
-    background: #ccc; /* لون رمادي */
-}
-
-.next, .confirm { /* أزرار التنقل للأمام والتأكيد */
-    background: #165c3e; /* لون أخضر */
-    color: white; /* لون النص أبيض */
-}
-
-.back { /* زر الرجوع */
-    background: #165c3e; /* لون أخضر */
-    color: white; /* لون النص أبيض */
-}
-p strong { 
-    color: #888888; /* لون رمادي فاتح */
-    font-weight: normal; /* إزالة التحديد العريض */
-}
-.container {
-    margin-top: 80px; /* اجعل المحتوى يبتعد عن الشريط */
-}
 .progress-bar {
-    height: 40px; /* تصغير ارتفاع الشريط */
-    padding: 5px 0; /* تقليل المسافة الداخلية */
-    font-size: 14px; /* تصغير حجم الخط */
-}
-
-.progress-bar .step::after {
-    width: 20px; /* تصغير حجم الدائرة */
-    height: 20px;
-    font-size: 12px; /* تصغير علامة الصح */
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  padding-top: 10px;
+  height: 40px;
+  padding: 5px 0;
+  font-size: 14px;
 }
 
 .progress-bar .step {
-    font-size: 14px; /* تصغير النص */
+  position: relative;
+  text-align: center;
+  width: 50%;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: "Inria Sans";
+  font-style: italic;
+  color: #888;
+}
+
+.progress-bar .step.preactive {
+  color: #165c3e;
+}
+
+.progress-bar .step.active {
+  color: #165c3e;
+}
+
+.progress-bar .step.preactive::after {
+  content: "";
+  background: white;
+  border: 2px solid #165c3e;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress-bar .step::after {
+  content: "✔";
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #165c3e;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+}
+
+.progress-bar .step:not(.active):not(.preactive)::after {
+  background: #ccc;
+  color: #ccc;
+}
+
+/* شعار الريال السعودي */
+/* Load font */
+@font-face {
+  font-family: "SAR";
+  src: url("/public/fonts/sar_shopvert.woff2") format("woff2"),
+    url("/public/fonts/sar_shopvert.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Base style */
+#riyal {
+  margin-right: 5px;
+}
+.icon {
+  font-family: "SAR";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Icon class */
+.icon-home:before {
+  content: "\e900";
+}
+
+/* Common CSS */
+.form-step {
+  display: none;
+}
+
+.form-step.active {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 520px;
+}
+
+h2 {
+  color: #165c3e;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 10px;
+  display: block;
+}
+
+textarea,
+.inp {
+  width: 97.5%;
+  padding: 8px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.browse {
+  background-color: #ececec5e;
+  box-shadow: #0000003f;
+  display: none;
+}
+
+.btn {
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  padding: 5px 10px;
+  font-family: "Helvetica", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  display: inline;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #eee;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#file-name {
+  margin-top: 10px;
+  display: inline;
+  font-family: "Helvetica", sans-serif;
+  font-size: 14px;
+  color: #333;
+}
+
+textarea {
+  height: 80px;
+}
+
+textarea {
+  width: 100%;
+  box-shadow: 0 1px 1px 0 #0000003f !important;
+  height: 150px;
+  padding: 12px;
+  border-radius: 10px !important;
+  border: 1px solid #ccc !important;
+  resize: none;
+  overflow-y: scroll;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.cancel {
+  background: #ccc;
+}
+
+.next,
+.confirm,
+.back {
+  background: #165c3e;
+  color: white;
+}
+
+p strong {
+  color: #888888;
+  font-weight: normal;
+}
+
+.container-r {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.review-option {
+  display: flex;
+  justify-content: center;
+}
+
+select {
+  appearance: none;
+  background-color: transparent;
+  border-color: unset;
+  border-width: 0;
+  border-radius: unset;
+  padding: 8px 18px;
+  font-size: unset;
+  line-height: unset;
+  color: inherit;
+  width: 100%;
+}
+
+select:focus-visible {
+  outline: none;
+}
+
+.dropdownlist {
+  box-shadow: 0 1px 1px 0 #0000003f !important;
+  width: 100%;
+  border-radius: 10px !important;
+  border: 1px solid #00000026;
+  background-size: 26px;
+  background-position: calc(100% - 15px);
+  display: flex;
+  flex-direction: row;
+}
+
+.chevron {
+  display: inline-block;
+  border-right: 2px solid #00000090;
+  border-bottom: 2px solid #00000090;
+  width: 10px;
+  height: 10px;
+}
+
+#chevron-arrow-up {
+  transform: rotate(45deg);
+}
+
+.row {
+  margin: 5px 10px 35px 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.col2 {
+  display: inline-block;
+  width: 500px;
+}
+
+.col1 {
+  display: inline-block;
+  width: 120px;
+}
+
+.state {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  width: fit-content;
+  border-radius: 4px !important;
+  border: 0.5px solid #00000033;
+  background-color: #f1f1f1f1;
+  color: #a3a3a3;
+  height: fit-content;
+  padding-left: 5px;
+  padding-right: 10px;
+  font-size: 13px;
+}
+
+h2,
+h3,
+p {
+  margin: 0;
 }

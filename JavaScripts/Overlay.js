@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // فتح الأوفرلاي
   openButton.addEventListener("click", function () {
-    fetch("ReviewRequestOptions.html") // استدعاء الملف
+    fetch("AI-Review-Request.html") // استدعاء الملف
       .then((response) => response.text()) // يحول الملف الى نص
       .then((data) => {
         // يأخذ البيانات عشان يضيفها
