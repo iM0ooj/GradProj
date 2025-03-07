@@ -1,12 +1,11 @@
-
 body {
-  background: #BAB8AB;
-  font-family: 'Headland One', serif;
+  background: #bab8ab;
+  font-family: "Headland One", serif;
   text-align: center;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
-
 
 .logo-section {
   position: absolute;
@@ -19,17 +18,16 @@ body {
 }
 
 .logo {
-  width: 85px; 
+  width: 85px;
 }
 
 .brand-name {
   font-size: 14px;
   font-weight: bold;
-  font-family: 'Gravitas One', cursive;
-  color: #0B1D26;
+  font-family: "Gravitas One", cursive;
+  color: #0b1d26;
   margin-top: -5px;
 }
-
 
 .form-container {
   display: flex;
@@ -38,9 +36,8 @@ body {
   height: 100vh;
 }
 
-
 .form-background {
-  background: linear-gradient(180deg, #BAB8AB 0, #97968d 130%);
+  background: linear-gradient(180deg, #bab8ab 0, #97968d 130%);
   padding: 40px;
   border-radius: 20px;
   box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.5);
@@ -48,9 +45,8 @@ body {
   max-width: 500px;
 }
 
-
 h2 {
-  color: #0B1D26;
+  color: #0b1d26;
   font-size: 24px;
 }
 
@@ -60,25 +56,27 @@ form input {
   margin: 10px 0;
   border: none;
   border-radius: 20px;
-  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 4px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2),
+    0px 4px 4px rgba(0, 0, 0, 0.2);
   font-size: 14px;
 }
 form select {
-  width: 104.50%;
+  width: 104.5%;
   padding: 11px;
   margin: 10px 0;
   border: none;
   border-radius: 20px;
-  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 4px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2),
+    0px 4px 4px rgba(0, 0, 0, 0.2);
   font-size: 14px;
   color: #706d6d;
 }
-.select{
+.select {
   cursor: pointer;
 }
 
 .signup-btn {
-  background-color: #0B1D26;
+  background-color: #0b1d26;
   color: white;
   padding: 12px;
   border: none;
@@ -89,11 +87,9 @@ form select {
   transition: 0.3s;
 }
 
-
 .signup-btn:hover {
   background-color: #09202a;
 }
-
 
 .error-message {
   color: red;
@@ -102,26 +98,26 @@ form select {
   display: none;
 }
 
-input:disabled{
-  background-color:#dcdcdc;
+input:disabled {
+  background-color: #dcdcdc;
   cursor: not-allowed;
 }
 @media (max-width: 768px) {
   .form-background {
-      width: 90%;
-      padding: 20px;
+    width: 90%;
+    padding: 20px;
   }
   h2 {
-      font-size: 22px;
+    font-size: 22px;
   }
 }
 
 @media (max-width: 480px) {
   .form-background {
-      width: 95%;
-      padding: 15px;
+    width: 95%;
+    padding: 15px;
   }
   h2 {
-      font-size: 20px;
+    font-size: 20px;
   }
 }
