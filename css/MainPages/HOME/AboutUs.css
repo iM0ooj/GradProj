@@ -1,591 +1,408 @@
-/*=========== TABLE OF CONTENTS ===========
-1. Common CSS
-2. Page CSS
-==========================================*/
-
-/*-------------------------------------
-  1. Common CSS
---------------------------------------*/
-.about-section__description {
-  font-family: Halant !important;
-  width: 70%;
-  line-height: 63px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  margin: auto;
-  @media only screen and (max-width: 1440px) {
-    font-size: 34px;
-  }
-
-  @media only screen and (max-width: 1050px) {
-    font-size: 34px;
-  }
-
-  @media only screen and (max-width: 550px) {
-    font-size: 32px;
-  }
+@import url("https://fonts.googleapis.com/css2?family=Halant:wght@300;400;500;600;700&display=swap");
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
-
-.about-section__title {
-  color: var(--black_900) !important;
-  font-family: Halant !important;
-  font-weight: 600 !important;
-  text-shadow: 0px 4px 4px #0000003f;
-  @media only screen and (max-width: 1440px) {
-    font-size: 48px;
-  }
-}
-
-.user-profile__image {
-  height: 128px;
-  margin-left: 126px;
-  z-index: 2;
-  width: 44%;
-  position: relative;
-  object-fit: contain;
-  @media only screen and (max-width: 1050px) {
-    margin-left: 0px;
-  }
-}
-
-.user-profile__content {
-  height: 428px;
-  margin-top: -46px;
-  position: relative;
-  background-image: url(../public/images/img_group_75.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  align-self: stretch;
-  padding: 122px 34px;
-  @media only screen and (max-width: 1440px) {
-    height: auto;
-    padding-top: var(--space-10xl);
-    padding-bottom: var(--space-10xl);
-  }
-
-  @media only screen and (max-width: 1050px) {
-    height: auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-
-  @media only screen and (max-width: 550px) {
-    padding: var(--space-4xl);
-  }
-}
-
-.user-profile__title {
-  color: var(--white_a700) !important;
-  font-family: Halant !important;
-  z-index: 1;
-  align-self: flex-end;
-  position: relative;
-  line-height: 63px;
-  @media only screen and (max-width: 1440px) {
-    font-size: 34px;
-  }
-
-  @media only screen and (max-width: 1050px) {
-    font-size: 34px;
-  }
-
-  @media only screen and (max-width: 550px) {
-    font-size: 32px;
-  }
-}
-
-.user-profile__description {
-  color: var(--white_a700) !important;
-  font-family: Halant !important;
-  text-align: center;
-  align-self: stretch;
-  line-height: 42px;
-  @media only screen and (max-width: 1440px) {
-    font-size: 22px;
-  }
-
-  @media only screen and (max-width: 1050px) {
-    font-size: 21px;
-  }
-}
-
-.flexible-interface-header {
-  background-color: var(--blue_gray_100_7f);
-  width: 24%;
+/* ---------------
+Header - Footer CSS 
+ --------------- */
+.center {
   display: flex;
   justify-content: center;
-  padding: 68px 20px;
-  border-radius: var(--radius-12xl);
-  border: 1px solid var(--black_900);
-  @media only screen and (max-width: 1440px) {
-    padding-top: var(--space-10xl);
-    padding-bottom: var(--space-10xl);
-  }
-
-  @media only screen and (max-width: 1050px) {
-    width: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-
-  @media only screen and (max-width: 550px) {
-    padding-top: var(--space-4xl);
-    padding-bottom: var(--space-4xl);
-  }
 }
-
-.flexible-interface-header__title {
-  color: var(--black_900) !important;
-  margin-bottom: 12px;
-  font-family: Halant !important;
-  font-weight: 600 !important;
-  @media only screen and (max-width: 1440px) {
-    font-size: 27px;
-  }
-
-  @media only screen and (max-width: 1050px) {
-    font-size: 26px;
-  }
-
-  @media only screen and (max-width: 550px) {
-    font-size: 24px;
-  }
-}
-
-/*-------------------------------------
-  2. Page CSS
---------------------------------------*/
-.about-us {
-  gap: var(--space-7xl);
-  background-color: var(--white_a700);
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-}
-
-.header-2 {
-  margin-top: 14px;
-  margin-left: 16px;
-  margin-right: 28px;
-  display: flex;
-  background: linear-gradient(180deg, #ffffffb2, #ffffffb2);
-  align-items: flex-start;
-  border-radius: var(--radius-4xl);
-  border: 1px solid var(--white_a700_7f);
-  @media only screen and (max-width: 1050px) {
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-}
-
-.header__top-row-1 {
-  margin-bottom: 8px;
-  width: 68%;
+/* Header */
+header {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 20px;
-  @media only screen and (max-width: 1440px) {
-    width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  @media only screen and (max-width: 1050px) {
-    width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  @media only screen and (max-width: 550px) {
-    flex-direction: column;
-  }
-}
-
-.stackrevolution {
-  height: 990px;
-  position: relative;
-}
-
-.teamimage_one {
-  height: 952px;
-  flex: 1;
+  padding: 10px;
   width: 100%;
-  object-fit: cover;
+  z-index: 1000;
+  border-radius: 10px;
+  border-color: #ffffff;
+  border-width: 5px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.logo-placeholder {
+  justify-items: center;
+  align-items: center;
+  color: #0b3322;
+}
+
+.logo {
+  width: 78px;
+}
+
+.brandname {
+  margin-top: -5px;
+  font-size: 12px;
+  font-weight: 300;
+  font-family: "Gravitas One", cursive;
+  width: 78px;
+  text-align: center;
+}
+
+/* Navbar */
+.nav {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-cont {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.navigate {
+  cursor: pointer;
+  color: #00000080;
+  transition: color 0.2s ease-in-out;
+}
+
+.navigate:hover {
+  color: #3a5363;
+}
+
+.profile {
+  width: 50px;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  padding: 10px;
+}
+
+.left {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.Footer-link {
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
+  color: #000000;
+  font-style: italic;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.Footer-link:hover {
+  color: #3a5363;
+}
+
+.left,
+.right,
+.Mid {
+  align-items: center;
+}
+
+.Mid {
+  font-size: 16px;
+  color: #000000;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.right img {
+  cursor: pointer;
+}
+
+/* ---------------
+Section 1 CSS 
+ --------------- */
+.section-1 {
+  position: relative;
+  height: 105vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.overlap {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.team-image {
   position: absolute;
-  left: 0px;
-  bottom: 0px;
-  right: 0px;
-  top: 0px;
-  margin: auto;
+  width: 100%;
+  height: 90vh;
+  background-size: cover;
+  background-image: url("/public/images/About-us/aboutus-section1.png");
+  top: 0;
+  left: 0;
 }
 
 .box {
-  background-color: var(--gray_900_01);
-  width: 68%;
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  bottom: -1px;
-  right: 0px;
-  left: 0px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: var(--space-3xl);
-  border-radius: var(--radius-13xl);
-  border: 25px solid var(--white_a700);
+  height: 105vh;
+  top: 811px;
+  left: 307px;
+  align-content: end;
 }
-
-.box__title {
-  color: var(--white_a700) !important;
-  font-family: Halant !important;
-  text-align: center;
-  flex: 1;
-  line-height: 75px;
-  @media only screen and (max-width: 1440px) {
-    font-size: 40px;
-  }
-
-  @media only screen and (max-width: 1050px) {
-    font-size: 32px;
-  }
-
-  @media only screen and (max-width: 550px) {
-    font-size: 26px;
-  }
-}
-
-.about-section {
-  margin-top: 214px;
-  margin-left: 176px;
-  margin-right: 176px;
-  gap: var(--space-9xl);
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  @media only screen and (max-width: 1050px) {
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-}
-
-.about-section__content {
-  height: 616px;
-  align-self: stretch;
+.overlap-group {
   position: relative;
-}
-
-.about-section__image {
-  height: 374px;
-  width: 40%;
-  object-fit: contain;
-  position: absolute;
-  bottom: 1px;
-  right: 0px;
-  margin: auto;
-}
-
-.about-us-section {
-  margin-top: 300px;
-  margin-left: 176px;
-  margin-right: 176px;
-  @media only screen and (max-width: 1050px) {
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-}
-
-.about-us-section__column {
-  gap: 34px;
+  width: 100%; /* Makes it responsive */
+  max-width: 1000px;
+  height: auto; /* Adjusts height dynamically */
+  min-height: 230px; /* Ensures a minimum height */
+  background-color: #0b1d26;
+  border-radius: 60px;
+  border: 25px solid #ffffff;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  padding: 10px; /* Adds spacing */
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
 }
 
-.about-us-section__stack {
-  height: 462px;
-  align-self: stretch;
-  position: relative;
-}
-
-.about-us-section__description {
-  font-family: Halant !important;
-  width: 62%;
-  line-height: 63px;
-  position: absolute;
-  right: 0px;
-  top: 0px;
-  margin: auto;
-  @media only screen and (max-width: 1440px) {
-    font-size: 34px;
-  }
-
-  @media only screen and (max-width: 1050px) {
-    font-size: 34px;
-  }
-
-  @media only screen and (max-width: 550px) {
-    font-size: 32px;
-  }
-}
-
-.about-us-section__image {
-  height: 374px;
-  width: 40%;
-  object-fit: contain;
-  position: absolute;
-  bottom: 1px;
-  left: 0px;
-  margin: auto;
-}
-
-.column {
-  margin-top: 274px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.about-us__column {
-  padding-left: 144px;
-  padding-right: 56px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  @media only screen and (max-width: 1440px) {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  @media only screen and (max-width: 1050px) {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-
-.about-us__content {
-  align-self: center;
-  width: 80%;
+.text-wrapper {
   display: flex;
   justify-content: center;
-  @media only screen and (max-width: 1440px) {
-    width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  @media only screen and (max-width: 1050px) {
-    width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-
-.about-us__column-2 {
-  gap: 48px;
-  display: flex;
+  align-items: center;
   width: 100%;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.about-us__divider {
-  height: 1px;
-  background-color: var(--black_900);
-  width: 54%;
-}
-
-.about-us__stack {
-  height: 498px;
-  margin-left: 16px;
-  align-self: stretch;
-  position: relative;
-  @media only screen and (max-width: 1050px) {
-    margin-left: 0px;
-  }
-}
-
-.about-us__image {
-  height: 374px;
-  width: 42%;
-  object-fit: contain;
-  position: absolute;
-  bottom: 1px;
-  right: -1px;
-  margin: auto;
-}
-
-.columntranspare {
-  margin-top: 222px;
-  gap: var(--space-14xl);
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  @media only screen and (max-width: 550px) {
-    gap: 29px;
-  }
-}
-
-.about-us__column-1 {
-  padding-left: 56px;
-  padding-right: 124px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  @media only screen and (max-width: 1440px) {
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-
-  @media only screen and (max-width: 1050px) {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-
-.profession-list {
-  gap: var(--space-8xl);
-  align-self: center;
-  display: flex;
-  width: 74%;
-  @media only screen and (max-width: 1050px) {
-    flex-direction: column;
-    width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-
-.user-profile {
-  width: 32%;
-  display: flex;
-  flex-direction: column;
-  @media only screen and (max-width: 1050px) {
-    width: 100%;
-  }
-}
-
-.user-profile-1 {
-  margin-top: 22px;
-  width: 32%;
-  display: flex;
-  flex-direction: column;
-  @media only screen and (max-width: 1050px) {
-    width: 100%;
-    margin-top: 0px;
-  }
-}
-
-.user-profile-2 {
-  margin-top: 14px;
-  width: 32%;
-  display: flex;
-  flex-direction: column;
-  @media only screen and (max-width: 1050px) {
-    width: 100%;
-    margin-top: 0px;
-  }
-}
-
-.rowwhychooseus {
-  margin-top: 238px;
-  z-index: 4;
-  position: relative;
-}
-
-.aboutussection {
-  gap: var(--space-15xl);
-  background-color: var(--gray_900_3f);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 170px 56px;
-  @media only screen and (max-width: 1440px) {
-    gap: var(--space-15xl);
-    padding-top: var(--space-10xl);
-    padding-bottom: var(--space-10xl);
-  }
-
-  @media only screen and (max-width: 1050px) {
-    gap: 70px;
-    padding: 20px;
-  }
-
-  @media only screen and (max-width: 550px) {
-    gap: 47px;
-    padding: var(--space-4xl);
-  }
-}
-
-.column-1 {
-  margin-left: 66px;
-  margin-right: 104px;
-  width: 76%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  @media only screen and (max-width: 1440px) {
-    width: 100%;
-  }
-
-  @media only screen and (max-width: 1050px) {
-    width: 100%;
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-}
-
-.column__title {
-  color: var(--gray_900_03) !important;
-  font-family: Halant !important;
-  @media only screen and (max-width: 1440px) {
-    font-size: 48px;
-  }
-}
-
-.column__description {
-  margin-top: -10px;
-  font-family: Halant !important;
+  max-width: 851px;
+  font-family: "Halant", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 2.5vw; /* Makes font size responsive */
   text-align: center;
-  font-weight: 500 !important;
-  position: relative;
-  align-self: stretch;
-  line-height: 75px;
-  @media only screen and (max-width: 1440px) {
-    font-size: 40px;
+  letter-spacing: 0;
+  line-height: 1.2;
+}
+
+/* Tablet & smaller screens */
+@media (max-width: 768px) {
+  .overlap-group {
+    border-width: 15px;
+    border-radius: 30px;
+    padding: 15px;
   }
 
-  @media only screen and (max-width: 1050px) {
-    font-size: 32px;
-  }
-
-  @media only screen and (max-width: 550px) {
-    font-size: 26px;
+  .text-wrapper {
+    font-size: 4vw;
   }
 }
 
-.about-us__list {
-  margin-bottom: 152px;
-  gap: var(--space-12xl);
-  display: flex;
-  width: 78%;
-  @media only screen and (max-width: 1050px) {
-    flex-direction: column;
-    width: 100%;
+/* Mobile screens */
+@media (max-width: 480px) {
+  .overlap-group {
+    border-width: 10px;
+    border-radius: 20px;
+    padding: 10px;
+  }
+
+  .text-wrapper {
+    font-size: 5vw;
   }
 }
 
-.footer-2 {
-  margin-top: -4px;
-  padding-left: var(--space-3xl);
-  padding-right: var(--space-3xl);
+/* ---------------
+Section 2 CSS 
+ --------------- */
+.section-2 {
   position: relative;
+  height: 80vh;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  gap: 20px;
-  @media only screen and (max-width: 1050px) {
-    flex-direction: column;
-  }
+  justify-content: center;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  height: 60%;
+}
+
+.content {
+  width: 60%;
+  height: fit-content;
+  align-self: flex-start;
+}
+
+.title-separator {
+  width: 80%;
+  height: 1px;
+  background-color: #000000;
+  opacity: 0.5;
+}
+
+.title {
+  font-family: "Halant", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 56px;
+  margin: 0;
+}
+
+.text {
+  font-family: "Halant", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+}
+
+.section-img {
+  width: 40%;
+  flex: 1;
+  display: flex;
+  align-self: flex-end;
+}
+
+.section-img img {
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 10 50px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* ---------------
+Section 5 CSS 
+ --------------- */
+.section-3 {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.values {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 30%;
+  gap: 30px;
+}
+
+.values-box {
+  background-color: #2f3b41;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 15px;
+  padding: 60px 20px 20px; /* Extra padding at the top for icon */
+  height: 100%;
+  width: 20%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+
+.icon-wrapper {
+  position: absolute;
+  top: -40px; /* Moves the icon above the card */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  padding: 10px;
+  border-radius: 50%; /* Circular background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-profile__image {
+  width: 80px;
+}
+
+.box-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.box-cont h3 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.box-cont p {
+  font-size: 20px;
+  margin-top: 5px;
+  max-width: 90%;
+}
+
+/* ---------------
+Section 6 CSS 
+ --------------- */
+.section-4 {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #0b332225;
+}
+
+.choose-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.choose-cont h2 {
+  font-family: "Halant", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+  margin-bottom: 10%;
+}
+
+.choose-cont h3 {
+  font-family: "Halant", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 45px;
+  margin: 0;
+  text-align: center;
+}
+
+.choose-row {
+  display: flex;
+  flex-direction: row;
+  gap: 3%;
+}
+
+.choose-box {
+  width: 300px;
+  padding: 15px;
+  color: #ffffff;
+  background-color: #0b3322;
+  border-radius: 15px;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.choose-box:hover {
+  background-color: #0b332290;
 }

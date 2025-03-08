@@ -1,13 +1,12 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Headland+One&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Headland+One&display=swap");
 
 body {
-  background: #BAB8AB;
-  font-family: 'Headland One', serif;
+  background: #bab8ab;
+  font-family: "Headland One", serif;
   text-align: center;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 .logo-section {
   position: absolute;
@@ -21,33 +20,31 @@ body {
 }
 
 .logo {
-  width: 95px; 
+  width: 95px;
 }
 
 .brand-name {
   font-size: 14px;
   font-weight: bold;
-  font-family: 'Gravitas One', cursive;
-  color: #0B1D26;
+  font-family: "Gravitas One", cursive;
+  color: #0b1d26;
   margin-top: -5px;
 }
 
 h1 {
-  color: #0B1D26;
+  color: #0b1d26;
   font-size: 1.2em;
   margin-top: 100px;
 }
 
-
 p {
-  color: #0B1D26;
+  color: #0b1d26;
   font-size: 1.2em;
   margin-bottom: 10px;
 }
 
-
 .user-type-container {
-  background: linear-gradient(180deg, #BAB8AB 0%, #54534D 100%);
+  background: linear-gradient(180deg, #bab8ab 0%, #54534d 100%);
   padding: 30px;
   margin: 30px auto;
   width: 90%;
@@ -59,10 +56,9 @@ p {
   grid-gap: 20px;
 }
 
-
 .user-type-btn {
   display: block;
-  background-color: #0B1D26;
+  background-color: #0b1d26;
   color: white;
   text-decoration: none;
   padding: 15px;
@@ -72,14 +68,10 @@ p {
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-
 .user-type-btn:hover {
   background-color: #09202a;
   transform: scale(1.05);
 }
-
-
-
 
 @media (min-width: 1200px) {
   .user-type-container {
@@ -94,7 +86,6 @@ p {
   }
 }
 
-
 @media (max-width: 1199px) {
   .user-type-container {
     max-width: 550px;
@@ -108,11 +99,10 @@ p {
   }
 }
 
-
 @media (max-width: 768px) {
   .user-type-container {
     max-width: 450px;
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: repeat(2, 1fr);
   }
   h1 {
     font-size: 2em;
@@ -126,7 +116,7 @@ p {
 @media (max-width: 480px) {
   .user-type-container {
     max-width: 90%;
-    grid-template-columns: repeat(1, 1fr); 
+    grid-template-columns: repeat(1, 1fr);
   }
   h1 {
     font-size: 1.8em;
