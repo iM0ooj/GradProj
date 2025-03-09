@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile - Hakkem</title>
+    <link rel="stylesheet" href="MyProfile-UNI.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- القائمة الجانبية -->
+      <aside class="sidebar">
+        <ul>
+          <li class="active">
+            <img src="image-profile-icon.png" alt="Profile" />
+            <a href="../myprofile/profile..html">My Profile</a>
+          </li>
+          <li>
+            <img src="image-research-icon.png" alt="Research" />
+            <a href="../My_Researchers/my-researches.html">My Researches</a>
+          </li>
+          <li>
+            <img src="image-requests-icon.png" alt="Requests" />
+            <a href="../MyRequests/index.html">My Requests</a>
+          </li>
+          <li>
+            <img src="image-password-icon.png" alt="Change Password" />
+            <a href="#">Change Password</a>
+          </li>
+          <li>
+            <img src="image-delete-icon.png" alt="Delete Account" />
+            <a href="#">Delete Account</a>
+          </li>
+          <li>
+            <img src="image-signout-icon.png" alt="Sign Out" />
+            <a href="#">Sign Out</a>
+          </li>
+        </ul>
+      </aside>
+
+      <!-- المحتوى الرئيسي -->
+      <main class="profile-content">
+        <div class="profile-box">
+          <button id="edit-btn" class="edit-button">
+            <img src="edit-icon.png" alt="Edit" /> Edit
+          </button>
+
+          <form id="profile-form">
+            <div class="form-group">
+              <label for="first-name">First Name:</label>
+              <input type="text" id="first-name" disabled />
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name:</label>
+              <input type="text" id="last-name" disabled />
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" disabled />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone:</label>
+              <input type="text" id="phone" disabled />
+            </div>
+            <div class="form-group">
+              <label for="university">University:</label>
+              <input type="text" id="university" disabled />
+            </div>
+            <div class="form-group">
+              <label for="academic-rank">Academic Rank:</label>
+              <input type="text" id="academic-rank" disabled />
+            </div>
+            <div class="form-group">
+              <label for="qualification">Academic Qualification:</label>
+              <select id="qualification" disabled>
+                <option value="">Select...</option>
+                <option value="bachelor">Bachelor's</option>
+                <option value="master">Master's</option>
+                <option value="phd">PhD</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="bachelor-specialization"
+                >Bachelor's Specialization:</label
+              >
+              <input type="text" id="bachelor-specialization" disabled />
+            </div>
+            <div class="form-group">
+              <label for="master-specialization"
+                >Master’s Specialization:</label
+              >
+              <input type="text" id="master-specialization" disabled />
+            </div>
+            <div class="form-group">
+              <label for="doctorate-specialization"
+                >Doctorate’s Specialization:</label
+              >
+              <input type="text" id="doctorate-specialization" disabled />
+            </div>
+            <div class="form-group">
+              <label for="specialization">Specialization:</label>
+              <input type="text" id="specialization" disabled />
+            </div>
+            <div class="form-actions">
+              <button type="submit" id="save-btn" class="save-button" disabled>
+                Save changes
+              </button>
+              <button
+                type="button"
+                id="cancel-btn"
+                class="cancel-button"
+                disabled
+              >
+                Cancel
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <!-- صورة البطاقة -->
+        <div class="profile-card">
+          <img src="Digital Wallet.png" alt="User Card" />
+        </div>
+      </main>
+    </div>
+
+    <script src="MyProfile-UNI.js"></script>
+  </body>
+</html>
