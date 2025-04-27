@@ -46,7 +46,7 @@ body {
   color: #333;
   display: block;
   flex-grow: 1;
-  font-weight: bold; 
+  font-weight: bold;
 }
 
 
@@ -70,18 +70,18 @@ body {
   gap: 10px;
   margin-bottom: 20px;
   padding: 10px;
-  background: #f0f0f0; 
+  background: #f0f0f0;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(8, 6, 6, 0.1); 
+  box-shadow: 0 4px 8px rgba(8, 6, 6, 0.1);
 }
 
 .filter button {
   border: none;
   padding: 10px 20px;
   background: #ddd;
-  border-radius: 20px; 
+  border-radius: 20px;
   cursor: pointer;
-  font-weight: bold; 
+  font-weight: bold;
 }
 
 .filter button.active {
@@ -146,7 +146,7 @@ body {
   color: #333;
   display: block;
   flex-grow: 1;
-  font-weight: bold; 
+  font-weight: bold;
 }
 
 
@@ -170,18 +170,18 @@ body {
   gap: 10px;
   margin-bottom: 20px;
   padding: 10px;
-  background: #f0f0f0; 
+  background: #f0f0f0;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(8, 6, 6, 0.1); 
+  box-shadow: 0 4px 8px rgba(8, 6, 6, 0.1);
 }
 
 .filter button {
   border: none;
   padding: 10px 20px;
   background: #ddd;
-  border-radius: 20px; 
+  border-radius: 20px;
   cursor: pointer;
-  font-weight: bold; 
+  font-weight: bold;
 }
 
 .filter button.active {
